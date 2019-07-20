@@ -7,12 +7,15 @@
 
     <Button
         android:id="@+id/cerrar"
-        android:layout_width="300dp"
-        android:layout_height="155dp"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="506dp"
-        android:layout_marginEnd="55dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="482dp"
+        android:layout_marginEnd="46dp"
         android:background="#359c5e"
         android:onClick="cerrar"
         android:padding="8dp"

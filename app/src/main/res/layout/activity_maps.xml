@@ -7,57 +7,62 @@
     <fragment
         android:id="@+id/map"
         class="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-3dp" />
 
     <Button
         android:id="@+id/menuPrincipal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="11dp"
         android:layout_marginTop="22dp"
         android:layout_marginEnd="249dp"
         android:layout_marginBottom="5dp"
         android:background="#359c5e"
+        android:onClick="alMenuPrincipal"
         android:padding="8dp"
         android:text="Al menu principal"
-        android:onClick="alMenuPrincipal"
         android:textColor="#ffffff" />
 
     <Button
         android:id="@+id/video"
-        android:layout_width="wrap_content"
+        android:layout_width="142dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="251dp"
         android:layout_marginTop="662dp"
-        android:layout_marginEnd="43dp"
+        android:layout_marginEnd="18dp"
         android:layout_marginBottom="5dp"
         android:background="#359c5e"
+        android:onClick="toVideo"
         android:padding="8dp"
         android:text="Video"
-        android:onClick="toVideo"
         android:textColor="#ffffff" />
 
     <Button
         android:id="@+id/calendario"
-        android:layout_width="wrap_content"
+        android:layout_width="167dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="661dp"
-        android:layout_marginEnd="258dp"
+        android:layout_marginEnd="192dp"
         android:layout_marginBottom="5dp"
         android:background="#359c5e"
+        android:onClick="toCalendar"
         android:padding="8dp"
         android:text="Calendario"
-        android:onClick="toCalendar"
         android:textColor="#ffffff" />
 
 </RelativeLayout>
