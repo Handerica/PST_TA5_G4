@@ -23,6 +23,7 @@ public class Calendario extends AppCompatActivity {
 
                 String date = i + "/" + i1 + "/" + i2;
 
+
                 Intent intent = new Intent(Calendario.this, TareasCalendario.class);
                 intent.putExtra("date", date);
 
