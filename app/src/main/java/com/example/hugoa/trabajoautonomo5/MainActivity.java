@@ -18,6 +18,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }
 
+        public void video(View view) {
+            Intent i = new Intent(this, Video.class );
+            startActivity(i);
+        }
+
+
+
 
     }
 
