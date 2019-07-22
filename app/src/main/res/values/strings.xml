@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">TrabajoAutonomo5</string>
     <string name="title_activity_video">Video</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

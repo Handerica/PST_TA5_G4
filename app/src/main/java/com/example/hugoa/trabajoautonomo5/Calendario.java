@@ -2,11 +2,12 @@ package com.example.hugoa.trabajoautonomo5;
 
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CalendarView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Calendario extends AppCompatActivity {
 
@@ -35,5 +36,6 @@ public class Calendario extends AppCompatActivity {
     public void calendarSalir(View view) {
         Intent i = new Intent(this, MainActivity.class );
         startActivity(i);
+        finish();
     }
 }

@@ -1,14 +1,13 @@
 package com.example.hugoa.trabajoautonomo5;
 
+import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Video extends AppCompatActivity {
 
@@ -30,6 +29,8 @@ public class Video extends AppCompatActivity {
     }
 
     public void volver(View view){
+        Intent i = new Intent(this,MainActivity.class);
+        startActivity(i);
         finish();
     }
 }
