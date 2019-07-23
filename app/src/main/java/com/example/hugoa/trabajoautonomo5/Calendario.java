@@ -16,15 +16,16 @@ public class Calendario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendario);
 
-        CalendarView calendarView = findViewById(R.id.calendarView);
+        CalendarView calendarView = findViewById(R.id.calendarView); //Declaramos clase CalendarView
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
-            public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
+            public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) { // Obtenemos la fecha que ha sido seleccionada en el calendario
 
-                String date = i + "/" + i1 + "/" + i2;
+                String date = i + "/" + (i1+1) + "/" + i2; //Guardamos esa fecha, este dato se envia a TareasCalendario
 
-                Intent intent = new Intent(Calendario.this, TareasCalendario.class);
+                Intent intent = new Intent(Calendario.this, TareasCalendario.class); //Al presinar alguna fecha del calendario
+                //por medio de Intent nos dirigimos a TareasCalendario
                 intent.putExtra("date", date);
 
                 startActivity(intent);
@@ -33,7 +34,7 @@ public class Calendario extends AppCompatActivity {
         });
     }
 
-    public void calendarSalir(View view) {
+    public void calendarSalir(View view) { //Funcion para ir de la ventana Calendario al Menu principal (MainActivity)
         Intent i = new Intent(this, MainActivity.class );
         startActivity(i);
         finish();

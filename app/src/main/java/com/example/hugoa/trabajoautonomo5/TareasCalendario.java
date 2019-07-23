@@ -20,28 +20,28 @@ public class TareasCalendario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tareas_calendario);
 
-        TextView fecha = findViewById(R.id.textView1);
-        TextView tarea = findViewById(R.id.textView2);
-        Button button = findViewById(R.id.button2);
+        TextView txtfecha = findViewById(R.id.textView1); //Declaramos TextView Fecha - Este TextView presentara la fecha presionada en el calendario
+        TextView txttarea = findViewById(R.id.textView2); //Declaramos TextView tarea - Este TextView presentara la tarea que haya para esa fecha
+        Button btnvolver = findViewById(R.id.button2); //Declaramos Button - Este boton nos permitira volver al calendario
 
-        String Ftarea = "2019/6/22";
+        String tarea1 = "2019/7/23"; // String que contiene la fecha de nuestra tarea
 
-        String date = getIntent().getStringExtra("date");
+        String date = getIntent().getStringExtra("date"); //Obtenemos la fecha presionada en el calendario
         if(date!= null)
-            fecha.setText(date);
+            txtfecha.setText(date); //Presentamos la fecha presionada en nuestro txtfecha
 
-        if (Objects.equals(date, Ftarea)) {
-            tarea.setText("Presentar trabajo autonomo 5");
+        if (Objects.equals(date, tarea1)) { //si el valor de la fecha es igual a la fecha de nuestra tarea
+            txttarea.setText("Presentar trabajo autonomo 5"); //Presentamos la tarea en nuestro txttarea
         }
         else {
-            tarea.setText("No hay tarea guardada");
+            txttarea.setText("No hay tarea guardada");
         }
 
 
 
-        button.setOnClickListener(new View.OnClickListener() {
+        btnvolver.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { //si damos clic en el boton volver, por medio de intent volveremos a la ventana calendario
 
                 Intent intent = new Intent(TareasCalendario.this, Calendario.class);
                 startActivity(intent);
