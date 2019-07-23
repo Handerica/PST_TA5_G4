@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void salir(View view) {
-        onDestroy();
+        finish();
     }
 }
 

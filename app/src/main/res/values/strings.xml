@@ -2,4 +2,9 @@
     <string name="app_name">TrabajoAutonomo5</string>
     <string name="title_activity_video">Video</string>
     <string name="title_activity_maps">Map</string>
+    <string name="menu_principal">MENU PRINCIPAL</string>
+    <string name="calendario">Calendario</string>
+    <string name="video">Video</string>
+    <string name="salir">Salir</string>
+    <string name="mapa">Mapa</string>
 </resources>
