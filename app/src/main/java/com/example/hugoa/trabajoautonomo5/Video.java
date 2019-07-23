@@ -17,7 +17,7 @@ public class Video extends AppCompatActivity {
         setContentView(R.layout.activity_video);
 
         VideoView video_View = (VideoView) findViewById(R.id.video_View);
-        String video_Url = "rtsp://r4---sn-q4flrn7d.googlevideo.com/Cj0LENy73wIaNAm0AwCrktgsZhMYDSANFC2PXDVdMOCoAUIASARgvOvWu5fa8epbigELejZ4aWo5UlEyM2MM/DE928892FF7DB612E420CE667D19228BE10E78AB.D5C80A005C3D77C5747E14611C37B3AB6C5DA81E/yt8/1/video.3gp";
+        String video_Url = "rtsp://r6---sn-q4fl6n7y.googlevideo.com/Cj0LENy73wIaNAne9qSXOd-2pxMYDSANFC1rajZdMOCoAUIASARgvOvWu5fa8epbigELejZ4aWo5UlEyM2MM/2ECF48580AEF4C9213BD138E8609888E811FA4BA.298C2FCB635ECF0A240E5B71C4998452112C7B21/yt8/1/video.3gp";
         Uri uri = Uri.parse(video_Url);
         video_View.setMediaController(new MediaController(this));
         video_View.setVideoURI(uri);
