@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -36,9 +34,7 @@ public class Video extends YouTubeBaseActivity {
                 videoList.add("p7bfOZek9t4");
                 videoList.add("ASgWBCP7nP0");
                 youTubePlayer.loadVideos(videoList);
-
             }
-
             @Override
             public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
 
