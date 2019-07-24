@@ -18,9 +18,9 @@ import java.util.List;
 public class Video extends YouTubeBaseActivity {
 
 
-    YouTubePlayerView YT_View;
-    Button btn_Play;
-    YouTubePlayer.OnInitializedListener onInitializedListener;
+    private YouTubePlayerView YT_View;
+    private Button btn_Play;
+    private YouTubePlayer.OnInitializedListener onInitializedListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
