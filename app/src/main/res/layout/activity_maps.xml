@@ -27,34 +27,4 @@ android:orientation="vertical">
         android:onClick="alMenuPrincipal"
         android:textColor="#ffffff" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="182dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="609dp"
-        android:layout_marginEnd="219dp"
-        android:layout_marginBottom="5dp"
-        android:background="#359c5e"
-        android:padding="8dp"
-        android:text="Calendario"
-        android:onClick="toCalendario"
-        android:textColor="#ffffff" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="182dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="670dp"
-        android:layout_marginEnd="218dp"
-        android:layout_marginBottom="5dp"
-        android:background="#359c5e"
-        android:padding="8dp"
-        android:text="Video"
-        android:onClick="toVideo"
-        android:textColor="#ffffff" />
-
 </RelativeLayout>

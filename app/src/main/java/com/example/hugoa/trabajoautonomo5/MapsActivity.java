@@ -29,13 +29,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
     /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
+     * Manipula el mapa una vez este disponible
+     * Esto es activado una vez el mapa este listo para usarse.
+     * En este metodo se puede añadir marcadores o lineas, listeners o mover la camara del mapa.
+     * En este caso solo marcaremos el lugar geografico de ESPOL en el mapa.
+     * Google Play services debe estar instaladao en el dispositivo. Caso contrario el usuario
+     * se vera forzado a instalarlo. El mapa se mostrara una vez que los servicios de Google hayan
+     * sido instalados y se retorne a la App.
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -47,21 +47,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(espol,50F)); //Zoom a la zona geografica
     }
 
+    /**
+     * Metodo que retorna al menu principal de la aplicacion usando Intents.
+     * @param view Correspondiente al boton puesto sobre el map view
+     */
     public void alMenuPrincipal(View view) {
         Intent i = new Intent(this,MainActivity.class);
         startActivity(i);
         finish();
     }
 
-    public void toCalendario(View view) {
-        Intent i1 = new Intent(this,Calendario.class);
-        startActivity(i1);
-        finish();
-    }
-
-    public void toVideo(View view) {
-        Intent i2 = new Intent(this,Video.class);
-        startActivity(i2);
-        finish();
-    }
 }
